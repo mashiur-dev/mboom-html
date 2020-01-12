@@ -1,0 +1,221 @@
+/*
+* https://www.jqueryscript.net/other/Minimal-jQuery-Cross-platform-Audio-Player-MINImusic-Player.html
+*/
+
+/* HTML5 Audio player with playlist styles */
+.example, .example2 {
+    margin: 50px auto 0;
+    width: 390px;
+}
+
+.player {
+	background: #f09f8b;
+	height: 150px;
+	position: relative;
+	width: 100%;
+	z-index: 2;
+}
+.title, .artist {
+    font-family: verdana;
+    left: 167px;
+    position: absolute;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.title {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    top: 23px;
+}
+.artist {
+    color: #EEEEEE;
+    font-size: 12px;
+    top: 40px;
+}
+.pl {
+    background: url(../images/playlist.png) no-repeat;
+    cursor: pointer;
+    height: 40px;
+    left: 330px;
+    position: absolute;
+    top: 20px;
+    width: 39px;
+}
+.pl:hover {
+    top: 21px;
+}
+.cover {
+	border-radius: 1px;
+	height: 94px;
+	left: 20px;
+	position: absolute;
+	top: 30px;
+	width: 94px;
+	background-size: 100%;
+}
+.controls {
+	cursor: pointer;
+	position: absolute;
+	top: 95px;
+	left: 130px;
+	width: 20%;
+}
+.controls .play, .controls .pause {
+	background: #000;
+	line-height: 27px;
+	border-radius: 50px;
+}
+.controls .play, .controls .pause, .controls .rew, .controls .fwd, .controls .stop {
+	width: 30px;
+	height: 30px;
+	margin-top: 1px;
+	text-indent: 0px;
+	border: none;
+	float: left;
+	text-align: center;
+}
+
+.play::before, .pause::before, .rew::before, .fwd::before, .stop::before, .volume-btn::before {
+	font-size: 13px;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+}
+.controls .play::before {
+	content: "\f04b";
+}
+
+.controls .pause {
+    display: none;
+}
+.controls .pause::before {
+	content: "\f04c";
+}
+
+.controls .rew::before {
+    content: "\f048";
+}
+.controls .fwd::before {
+    content: "\f051";
+}
+.controls .stop::before {
+    content: "\f04d";
+}
+.hidden {
+    display: none;
+}
+.controls .visible {
+    display: block;
+}
+.volume {
+	height: 11px;
+	right: 20px;
+	position: absolute;
+	top: 70px;
+	width: 70px;
+}
+.mute  .volume-btn::before {
+    content: "\f026"
+}
+.volume-btn::before {
+    content: "\f028"
+}
+.volume-btn {
+	height: 12px;
+	width: 20px;
+	display: inline-block;
+	position: relative;
+}
+.volume-adjust {
+	height: 8px;
+	position: relative;
+	width: 48px;
+	background: #fff;
+	display: inline-block;
+}
+.volume-adjust > div > div {
+	height: 8px;
+	background: #151B48;
+}
+.progressbar {
+	background-color: #fff;
+	cursor: pointer;
+	z-index: 1;
+	right: -1em;
+	height: 15px;
+	position: absolute;
+	width: 40%;
+	top: 104px;
+	margin-right: 38px;
+}
+.novolume .progressbar
+{
+    right: 4.375em; /* 70 */
+}
+.progressbar div
+{
+    width: 0%;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.bar-loaded
+{
+    background-color: #f1f1f1;
+    z-index: 1;
+}
+.bar-played
+{
+    background: #151B48;
+    z-index: 2;
+}
+.timeHolder {
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	top: 102px;
+	position: absolute;
+	left: 41%;
+	width: 20%;
+}
+.time-current, .time-duration, .time-separator {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+}
+.volume .ui-slider-handle {
+    background: url("../images/spr.png") no-repeat scroll -201px -188px rgba(0, 0, 0, 0);
+    height: 13px;
+    width: 13px;
+}
+.playlist {
+	background-color: #fff;
+	list-style-type: none;
+	padding-bottom: 10px;
+	padding-top: 15px;
+	position: relative;
+	width: 95%;
+	z-index: 1;
+	margin: 20px auto;
+}
+.playlist li {
+    color: #151B48;
+    cursor: pointer;
+    margin: 0 0 5px 15px;
+}
+.playlist li > a {
+   color: #151B48;
+   text-decoration: none;
+}
+.playlist li.active {
+    font-weight: bold;
+}

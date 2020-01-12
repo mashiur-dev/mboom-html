@@ -1,16 +1,22 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>mBoom - Music theme</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <title>Hello, world!</title>
+      <!-- Load google fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800&display=swap" rel="stylesheet">
+      <!-- FontAwesome kit -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- owl.carousel CSS -->
+      <link rel="stylesheet" href="js/assets/owl.carousel.min.css">
+      <link rel="stylesheet" href="js/assets/owl.theme.default.min.css">
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
    <header id="header-area">
@@ -21,29 +27,55 @@
                <nav class="navbar navbar-expand-lg">
 
                   <a class="navbar-brand" href="#">
-                     <img src="" alt="">
+                     <img src="imgs/logo.png" alt="mboom">
                   </a><!-- header logo -->
 
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-header-menu" aria-controls="main-header-menu" aria-expanded="false" aria-label="Toggle navigation">
                      <span class="navbar-toggler-icon"></span>
                   </button><!-- mobile menu toggle -->
 
-                  <div class="collapse navbar-collapse" id="main-header-menu">
+                  <div class="collapse navbar-collapse ml-lg-5" id="main-header-menu">
 
-                     <ul class="navbar-nav justify-content-center mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                     <ul class="nav-menu mr-auto mt-2 mt-lg-0">
+                        <li class="active">
+                           <a href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#">Link</a>
+                        <li>
+                           <a href="#">All News</a>
+                        </li>
+                        <li>
+                           <a href="#">Gallary</a>
+                        </li>
+                        <li>
+                           <a href="#">Artist</a>
+                        </li>
+                        <li>
+                           <a href="#">Album</a>
+                        </li>
+                        <li>
+                           <a href="#">Videos</a>
+                        </li>
+                        <li>
+                           <a href="#">Contact</a>
                         </li>
                      </ul><!-- menu items -->
 
-                     <ul class="navbar-nav my-2 my-lg-0">
-                        <li class="nav-item"><a href="">FB</a></li>
-                        <li class="nav-item"><a href="">TWT</a></li>
-                        <li class="nav-item"><a href="">G+</a></li>
-                        <li class="nav-item"><a href="">CART</a></li>
+                     <ul class="social-icons my-2 my-lg-0">
+                        <li>
+                           <a href=""><i class="fab fa-facebook-f"></i></i></a>
+                        </li>
+                        <li>
+                           <a href=""><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                           <a href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                           <a href=""><i class="fab fa-google-plus-g"></i></a>
+                        </li>
+                        <li>
+                           <a href=""><i class="fas fa-cart-arrow-down"></i></a>
+                        </li>
                      </ul><!-- social icons and cart -->
 
                   </div><!-- header menu items -->
@@ -57,36 +89,780 @@
 
    <section id="full-hero-area">
       <div class="container">
-         <div class="row">
+         <div class="row align-items-start">
 
-            <div class="col-12 hero-content">
-               <h1>Ex</h1>
-               <p></p>
-               <div class="hero-buttons">
-                  <button type="button" name="button">event ticket</button>
-                  <button type="button" name="button">listen music</button>
+            <div class="col-8 offert-lg-4 hero-content">
+
+               <h1>Exclusive event is here</h1>
+               <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
+
+               <div class="hero-buttons mt-4">
+                  <a class="btn btn-regular mr-4" href="#">event ticket</a>
+                  <a class="btn btn-regular" href="#">listen music</a>
                </div>
+
             </div><!-- .hero-content -->
 
-            <div class="col-12 music-player">
-               <audio src=""></audio>
-            </div><!-- .music-player -->
+         </div>
 
+         <div class="row align-items-end">
+            <div class="col-12 tx-audioplayer music-player">
+                <div id="tx-audioplayer-playlist" class="hidden">
+                    <span class="single-music" data-cover="imgs/album-cover.png" data-artist="Shoyeb R." data-src="audio1.mp3">Haven Drop</span>
+
+                    <span class="single-music" data-cover="imgs/album-cover2.png" data-artist="Rehan A." data-src="audio2.mp3">Funny disco</span>
+                </div>
+            </div><!-- .music-player -->
          </div>
       </div>
    </section><!-- #full-hero-area -->
-   
 
+   <section id="album-showcase-area">
+      <div class="container">
+         <div class="row">
+            <div class="section-title col-12">
+               <h1>Recently Relesed New Album & Singls</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspend.</p>
+            </div>
+            <div class="col-12">
+               <div class="card-columns">
 
+                  <div class="card single-album">
+                     <a href="#" class="album-cover">
+                        <img src="imgs/album-cover.png" class="card-img-top" alt="...">
+                        <span><i class="fas fa-play align-items-center"></i></span>
+                     </a>
+                     <div class="card-body">
+                        <a href="">
+                           <h5 class="card-title">Life is perfect</h5>
+                        </a>
+                        <p class="card-text">Shoyebz</p>
+                        <ul class="social-icons my-2 my-lg-0">
+                           <li>
+                              <a href=""><i class="fab fa-facebook-f"></i></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fab fa-twitter"></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fab fa-instagram"></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fab fa-google-plus-g"></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fas fa-cart-arrow-down"></i></a>
+                           </li>
+                        </ul><!-- social icons and cart -->
+                     </div>
+                  </div><!-- .single-album -->
 
+                  <div class="card single-album">
+                     <a href="#" class="album-cover">
+                        <img src="imgs/album-cover2.png" class="card-img-top" alt="...">
+                        <span><i class="fas fa-play align-items-center"></i></span>
+                     </a>
+                     <div class="card-body">
+                        <a href="">
+                           <h5 class="card-title">Life is perfect</h5>
+                        </a>
+                        <p class="card-text">Shoyebz</p>
+                        <ul class="social-icons my-2 my-lg-0">
+                           <li>
+                              <a href=""><i class="fab fa-facebook-f"></i></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fab fa-twitter"></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fab fa-instagram"></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fab fa-google-plus-g"></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fas fa-cart-arrow-down"></i></a>
+                           </li>
+                        </ul><!-- social icons and cart -->
+                     </div>
+                  </div><!-- .single-album -->
 
+                  <div class="card single-album">
+                     <a href="#" class="album-cover">
+                        <img src="imgs/album-cover3.png" class="card-img-top" alt="...">
+                        <span><i class="fas fa-play align-items-center"></i></span>
+                     </a>
+                     <div class="card-body">
+                        <a href="">
+                           <h5 class="card-title">Life is perfect</h5>
+                        </a>
+                        <p class="card-text">Shoyebz</p>
+                        <ul class="social-icons my-2 my-lg-0">
+                           <li>
+                              <a href=""><i class="fab fa-facebook-f"></i></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fab fa-twitter"></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fab fa-instagram"></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fab fa-google-plus-g"></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fas fa-cart-arrow-down"></i></a>
+                           </li>
+                        </ul><!-- social icons and cart -->
+                     </div>
+                  </div><!-- .single-album -->
 
+                  <div class="card single-album">
+                     <a href="#" class="album-cover">
+                        <img src="imgs/album-cover4.png" class="card-img-top" alt="...">
+                        <span><i class="fas fa-play align-items-center"></i></span>
+                     </a>
+                     <div class="card-body">
+                        <a href="">
+                           <h5 class="card-title">Life is perfect</h5>
+                        </a>
+                        <p class="card-text">Shoyebz</p>
+                        <ul class="social-icons my-2 my-lg-0">
+                           <li>
+                              <a href=""><i class="fab fa-facebook-f"></i></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fab fa-twitter"></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fab fa-instagram"></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fab fa-google-plus-g"></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fas fa-cart-arrow-down"></i></a>
+                           </li>
+                        </ul><!-- social icons and cart -->
+                     </div>
+                  </div><!-- .single-album -->
+
+                  <div class="card single-album">
+                     <a href="#" class="album-cover">
+                        <img src="imgs/album-cover5.png" class="card-img-top" alt="...">
+                        <span><i class="fas fa-play align-items-center"></i></span>
+                     </a>
+                     <div class="card-body">
+                        <a href="">
+                           <h5 class="card-title">Life is perfect</h5>
+                        </a>
+                        <p class="card-text">Shoyebz</p>
+                        <ul class="social-icons my-2 my-lg-0">
+                           <li>
+                              <a href=""><i class="fab fa-facebook-f"></i></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fab fa-twitter"></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fab fa-instagram"></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fab fa-google-plus-g"></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fas fa-cart-arrow-down"></i></a>
+                           </li>
+                        </ul><!-- social icons and cart -->
+                     </div>
+                  </div><!-- .single-album -->
+
+                  <div class="card single-album">
+                     <a href="#" class="album-cover">
+                        <img src="imgs/album-cover3.png" class="card-img-top" alt="...">
+                        <span><i class="fas fa-play align-items-center"></i></span>
+                     </a>
+                     <div class="card-body">
+                        <a href="">
+                           <h5 class="card-title">Life is perfect</h5>
+                        </a>
+                        <p class="card-text">Shoyebz</p>
+                        <ul class="social-icons my-2 my-lg-0">
+                           <li>
+                              <a href=""><i class="fab fa-facebook-f"></i></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fab fa-twitter"></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fab fa-instagram"></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fab fa-google-plus-g"></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fas fa-cart-arrow-down"></i></a>
+                           </li>
+                        </ul><!-- social icons and cart -->
+                     </div>
+                  </div><!-- .single-album -->
+
+               </div><!-- .card-columns -->
+
+            </div>
+         </div>
+      </div>
+   </section><!-- #album-showcase-area -->
+
+   <section id="upcomming-shows-area">
+      <div class="container">
+         <div class="row">
+
+            <div class="section-title col-12">
+               <h1>Upcomming Shows</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspend.</p>
+            </div>
+
+            <div class="col-12">
+
+               <div class="shows owl-carousel">
+                  <div class="single-event item" style="background-image:url(imgs/event-cover.png);">
+                     <sapn class="date">20 Feb, 2019</sapn>
+                     <div class="eventinfo text-center mb-5">
+                        <h2 class="title"><a href="">Rural Festive Event</a></h2>
+                        <h4 class="location">London Park, London</h4>
+                        <a class="btn btn-regular mr-4" href="#">buy ticket</a>
+                     </div>
+                  </div>
+                  <div class="single-event item" style="background-image:url(imgs/event-cover2.png);">
+                     <sapn class="date">20 Feb, 2019</sapn>
+                     <div class="eventinfo text-center mb-5">
+                        <h2 class="title"><a href="">Rural Festive Event</a></h2>
+                        <h4 class="location">London Park, London</h4>
+                        <a class="btn btn-regular mr-4" href="#">buy ticket</a>
+                     </div>
+                  </div>
+                  <div class="single-event item" style="background-image:url(imgs/event-cover3.png);">
+                     <sapn class="date">20 Feb, 2019</sapn>
+                     <div class="eventinfo text-center mb-5">
+                        <h2 class="title"><a href="">Rural Festive Event</a></h2>
+                        <h4 class="location">London Park, London</h4>
+                        <a class="btn btn-regular mr-4" href="#">buy ticket</a>
+                     </div>
+                  </div>
+               </div><!-- .owl-carousel -->
+
+            </div>
+         </div>
+      </div>
+   </section><!-- #upcomming-shows-area -->
+
+   <section id="expert-team-area">
+      <div class="container">
+         <div class="row">
+
+            <div class="section-title col-12">
+               <h1>Expert team</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspend.</p>
+            </div>
+            <div class="col-12">
+
+               <div class="team-profile owl-carousel">
+
+                  <div class="single-profile item" style="background-image:url(imgs/team-profile.png);">
+
+                     <div class="profile-info-cover">
+                        <div class="profile-info">
+                           <h5><a href="">Mashiur R.</a></h5>
+                           <p>Developer</p>
+                           <ul class="social-icons my-2 my-lg-0">
+                              <li>
+                                 <a href=""><i class="fab fa-facebook-f"></i></i></a>
+                              </li>
+                              <li>
+                                 <a href=""><i class="fab fa-twitter"></i></a>
+                              </li>
+                              <li>
+                                 <a href=""><i class="fab fa-instagram"></i></a>
+                              </li>
+                              <li>
+                                 <a href=""><i class="fab fa-google-plus-g"></i></a>
+                              </li>
+                              <li>
+                                 <a href=""><i class="fas fa-cart-arrow-down"></i></a>
+                              </li>
+                           </ul><!-- social icons and cart -->
+                        </div>
+                     </div>
+
+                  </div>
+
+                  <div class="single-profile item" style="background-image:url(imgs/team-profile2.png);">
+
+                     <div class="profile-info-cover">
+                        <div class="profile-info">
+                           <h5><a href="">Tawsif khan</a></h5>
+                           <p>Designer</p>
+                           <ul class="social-icons my-2 my-lg-0">
+                              <li>
+                                 <a href=""><i class="fab fa-facebook-f"></i></i></a>
+                              </li>
+                              <li>
+                                 <a href=""><i class="fab fa-twitter"></i></a>
+                              </li>
+                              <li>
+                                 <a href=""><i class="fab fa-instagram"></i></a>
+                              </li>
+                              <li>
+                                 <a href=""><i class="fab fa-google-plus-g"></i></a>
+                              </li>
+                              <li>
+                                 <a href=""><i class="fas fa-cart-arrow-down"></i></a>
+                              </li>
+                           </ul><!-- social icons and cart -->
+                        </div>
+                     </div>
+
+                  </div>
+
+                  <div class="single-profile item" style="background-image:url(imgs/team-profile.png);">
+
+                     <div class="profile-info-cover">
+                        <div class="profile-info">
+                           <h5><a href="">Rehan Adil</a></h5>
+                           <p>Developer</p>
+                           <ul class="social-icons my-2 my-lg-0">
+                              <li>
+                                 <a href=""><i class="fab fa-facebook-f"></i></i></a>
+                              </li>
+                              <li>
+                                 <a href=""><i class="fab fa-twitter"></i></a>
+                              </li>
+                              <li>
+                                 <a href=""><i class="fab fa-instagram"></i></a>
+                              </li>
+                              <li>
+                                 <a href=""><i class="fab fa-google-plus-g"></i></a>
+                              </li>
+                              <li>
+                                 <a href=""><i class="fas fa-cart-arrow-down"></i></a>
+                              </li>
+                           </ul><!-- social icons and cart -->
+                        </div>
+                     </div>
+
+                  </div>
+
+                  <div class="single-profile item" style="background-image:url(imgs/team-profile.png);">
+
+                     <div class="profile-info-cover">
+                        <div class="profile-info">
+                           <h5><a href="">Wali ullah</a></h5>
+                           <p>Designer</p>
+                           <ul class="social-icons my-2 my-lg-0">
+                              <li>
+                                 <a href=""><i class="fab fa-facebook-f"></i></i></a>
+                              </li>
+                              <li>
+                                 <a href=""><i class="fab fa-twitter"></i></a>
+                              </li>
+                              <li>
+                                 <a href=""><i class="fab fa-instagram"></i></a>
+                              </li>
+                              <li>
+                                 <a href=""><i class="fab fa-google-plus-g"></i></a>
+                              </li>
+                              <li>
+                                 <a href=""><i class="fas fa-cart-arrow-down"></i></a>
+                              </li>
+                           </ul><!-- social icons and cart -->
+                        </div>
+                     </div>
+
+                  </div>
+
+               </div><!-- .team-profile -->
+
+            </div>
+         </div>
+      </div>
+   </section><!-- #expert-team-area -->
+
+   <section id="listen-music-area">
+      <div class="container">
+         <div class="row">
+
+            <div class="section-title col-12">
+               <h1>Listen Music Online</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspend.</p>
+            </div>
+
+            <div class="col-12 margin-b">
+
+                  <div class="music-videos owl-carousel">
+
+                     <div class="single-video item" style="background-image:url(imgs/music-video-cover1.png);">
+                        <div class="video-inner">
+                           <h2>Selena Gomez - Look At Her Now</h2>
+                           <p>Selena Gomez Songs . Relesed - Oct 24, 2019</p>
+                        </div>
+                     </div>
+
+                     <div class="single-video item" style="background-image:url(imgs/music-video-cover1.png);">
+                        <div class="video-inner">
+                           <h2>Selena Gomez - Look At Her Now</h2>
+                           <p>Selena Gomez Songs . Relesed - Oct 24, 2019</p>
+                        </div>
+                     </div>
+
+                     <div class="single-video item" style="background-image:url(imgs/music-video-cover1.png);">
+                        <div class="video-inner">
+                           <h2>Selena Gomez - Look At Her Now</h2>
+                           <p>Selena Gomez Songs . Relesed - Oct 24, 2019</p>
+                        </div>
+                     </div>
+
+                  </div><!-- .music-videos -->
+
+            </div>
+
+            <div class="col-12">
+
+               <div class="inner-title">
+                  <h2>Recommended for you</h2>
+               </div>
+
+               <div class="recommended-music inner-section card-deck">
+
+                 <div class="single-music card">
+                   <img src="imgs/recommdend-music1.png" class="card-img-top" alt="...">
+                   <div class="card-body">
+                      <h5 class="card-title">Life is perfect</h5>
+                      <p class="card-text">Shoyebz</p>
+                   </div>
+                 </div><!-- .card -->
+
+                 <div class="single-music card">
+                   <img src="imgs/recommdend-music2.png" class="card-img-top" alt="...">
+                   <div class="card-body">
+                      <h5 class="card-title">Life is perfect</h5>
+                      <p class="card-text">Shoyebz</p>
+                   </div>
+                 </div><!-- .card -->
+
+                 <div class="single-music card">
+                   <img src="imgs/recommdend-music3.png" class="card-img-top" alt="...">
+                   <div class="card-body">
+                      <h5 class="card-title">Life is perfect</h5>
+                      <p class="card-text">Shoyebz</p>
+                   </div>
+                 </div><!-- .card -->
+
+                 <div class="single-music card">
+                   <img src="imgs/recommdend-music1.png" class="card-img-top" alt="...">
+                   <div class="card-body">
+                      <h5 class="card-title">Life is perfect</h5>
+                      <p class="card-text">Shoyebz</p>
+                   </div>
+                 </div><!-- .card -->
+
+                 <div class="single-music card">
+                   <img src="imgs/recommdend-music2.png" class="card-img-top" alt="...">
+                   <div class="card-body">
+                      <h5 class="card-title">Life is perfect</h5>
+                      <p class="card-text">Shoyebz</p>
+                   </div>
+                 </div><!-- .card -->
+
+               </div><!-- .recommended-music -->
+
+               <div class="row">
+                  <div class="col-8">
+                     <div class="inner-title">
+                        <h4>Songs</h4>
+                        <h2>Hot Songs</h2>
+                     </div>
+
+                     <div class="tx-hotsong-player"></div>
+
+                     <div id="tx-hotsong-playlist" class="hidden">
+                         <span class="single-music" data-cover="imgs/album-cover4.png" data-artist="Wali U." data-src="audio1.mp3">Haven Drop</span>
+
+                         <span class="single-music" data-cover="imgs/album-cover2.png" data-artist="Tawsif K." data-src="audio2.mp3">Funny disco</span>
+                     </div>
+
+                     <table id="" class="hot-songs-list table table-borderless">
+                        <thead>
+                           <tr>
+                              <th scope="col">Artist & song name</th>
+                              <th scope="col">Album</th>
+                              <th scope="col" class="text-center">Duration</th>
+                           </tr>
+                        </thead>
+
+                        <tbody>
+                           <tr>
+                              <td class="song-mane">
+                                 <img src="imgs/album-cover.png" alt="">
+                                 <span class="single-music" data-cover="imgs/album-cover.png" data-artist="Dazlin cord" data-src="audio2.mp3">The Weekend</span>
+                              </td>
+                              <td>
+                                 <span>Dazlin cord</span>
+                              </td>
+                              <td class="duration text-center">10.5</td>
+                           </tr>
+                           <tr>
+                              <td class="song-mane">
+                                 <img src="imgs/album-cover2.png" alt="">
+                                 <span class="single-music" data-cover="imgs/album-cover2.png" data-artist="Dazlin cord" data-src="audio1.mp3">Blue Moon Ft. Rexa</span>
+                              </td>
+                              <td>
+                                 <span>Death cure fo</span>
+                              </td>
+                              <td class="duration text-center">5.05</td>
+                           </tr>
+                           <tr>
+                              <td class="song-mane">
+                                 <img src="imgs/album-cover3.png" alt="">
+                                 <span class="single-music" data-cover="imgs/album-cover3.png" data-artist="Rehan" data-src="audio1.mp3">Red Moon Ft. Rehan</span>
+                              </td>
+                              <td>
+                                 <span>Death cure fo</span>
+                              </td>
+                              <td class="duration text-center">5.05</td>
+                           </tr>
+                           <tr>
+                              <td class="song-mane">
+                                 <img src="imgs/album-cover5.png" alt="">
+                                 <span>Blue Moon Ft. Rexa</span>
+                              </td>
+                              <td>
+                                 <span>Death cure fo</span>
+                              </td>
+                              <td class="duration text-center">5.05</td>
+                           </tr>
+                        </tbody>
+                     </table><!-- .hot-songs-list -->
+
+                  </div>
+
+                  <div class="col-4">
+                     <div class="inner-title">
+                        <h4>Albums</h4>
+                        <h2>Popular Albums</h2>
+                     </div>
+
+                     <div class="row popular-album">
+                        <div class="col-6">
+                           <div class="single-album" style="background-image:url(imgs/album-cover3.png);">
+                              <span class="play-btn">
+                                 <i class="fas fa-play align-items-center"></i>
+                              </span>
+                           </div>
+                        </div>
+                        <div class="col-6">
+                           <div class="single-album" style="background-image:url(imgs/album-cover5.png);">
+                              <span class="play-btn">
+                                 <i class="fas fa-play align-items-center"></i>
+                              </span>
+                           </div>
+                        </div>
+                        <div class="col-6">
+                           <div class="single-album" style="background-image:url(imgs/album-cover4.png);">
+                              <span class="play-btn">
+                                 <i class="fas fa-play align-items-center"></i>
+                              </span>
+                           </div>
+                        </div>
+                        <div class="col-6">
+                           <div class="single-album" style="background-image:url(imgs/album-cover2.png);">
+                              <span class="play-btn">
+                                 <i class="fas fa-play align-items-center"></i>
+                              </span>
+                           </div>
+                        </div>
+                     </div><!-- .popular-album -->
+
+                  </div>
+               </div>
+
+            </div>
+
+         </div>
+
+      </div>
+   </section><!-- #listen-music-area -->
+
+   <section id="blog-slider-area">
+      <div class="container">
+         <div class="row">
+            <div class="section-title col-12">
+               <h1>Blog News</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspend.</p>
+            </div>
+
+            <div class="col-md-12">
+
+               <div class="blog-carousel owl-carousel">
+
+                  <div class="single-blog item">
+                     <div class="blog-cover">
+                        <img src="imgs/blog-cover.png" alt="">
+                        <div class="blog-date">OCT,12<span>2019</span></div>
+                     </div>
+                     <div class="blog-footer">
+                        <a class="title mb-2" href="#">Silver Party arrange by a big Program.</a>
+                        <a class="post-author" href="#"><i class="fas fa-user mr-1"></i> By Admin</a>
+                     </div>
+                  </div>
+
+                  <div class="single-blog item">
+                     <div class="blog-cover">
+                        <img src="imgs/blog-cover.png" alt="">
+                        <div class="blog-date">OCT,12<span>2019</span></div>
+                     </div>
+                     <div class="blog-footer">
+                        <a class="title mb-2" href="#">Silver Party arrange by a big Program.</a>
+                        <a class="post-author" href="#"><i class="fas fa-user mr-1"></i> By Admin</a>
+                     </div>
+                  </div>
+
+                  <div class="single-blog item">
+                     <div class="blog-cover">
+                        <img src="imgs/blog-cover.png" alt="">
+                        <div class="blog-date">OCT,12<span>2019</span></div>
+                     </div>
+                     <div class="blog-footer">
+                        <a class="title mb-2" href="#">Silver incididunt ut labore et dolore magna aliqua. Quis ipsum suspend.</a>
+                        <a class="post-author" href="#"><i class="fas fa-user mr-1"></i> By Admin</a>
+                     </div>
+                  </div>
+
+                  <div class="single-blog item">
+                     <div class="blog-cover">
+                        <img src="imgs/event-cover.png" alt="">
+                        <div class="blog-date">OCT,12<span>2019</span></div>
+                     </div>
+                     <div class="blog-footer">
+                        <a class="title mb-2" href="#">Silver Party arrange by a big Program.</a>
+                        <a class="post-author" href="#"><i class="fas fa-user mr-1"></i> By Admin</a>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <footer id="footer-area">
+      <div class="footer-top margin-b">
+         <div class="container">
+            <div class="row newsletter inner-section">
+               <div class="col-md-5">
+                  <h3>Subscribe</h3>
+                  <p>Sign up for new releses to your inbox every week</p>
+               </div>
+               <div class="col-md-7">
+                  <form action="#">
+                     <lable class="subscribe-box mt-2">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="E-mail Address">
+                        <button type="button" name="button">SUBSCRIBE</button>
+                     </lable>
+                  </form>
+               </div>
+            </div>
+            <div class="row footer-widgets">
+
+               <div class="col-4 single-widget">
+                  <img class="widget-title" src="imgs/logo.png" alt="">
+                  <p class="mb-5">Lorem ipsam dolor sit amolet crospa drgym is percet sila most fdasit.</p>
+                  <ul class="useful-links email-phone">
+                      <li>Email: <a href="mailto:Support@mBoom.com">Support@mBoom.com</a></li>
+                      <li>Call: <a href="tel:555-555-1234">555-555-1234</a></li>
+                  </ul>
+
+                  <ul class="social-icons my-2 my-lg-0">
+                     <li>
+                        <a href=""><i class="fab fa-facebook-f"></i></i></a>
+                     </li>
+                     <li>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                     </li>
+                     <li>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                     </li>
+                     <li>
+                        <a href=""><i class="fab fa-google-plus-g"></i></a>
+                     </li>
+                     <li>
+                        <a href=""><i class="fas fa-cart-arrow-down"></i></a>
+                     </li>
+                  </ul><!-- social icons-->
+               </div><!-- .single-widget -->
+
+               <div class="col-3 single-widget">
+                  <h4 class="widget-title">Instagram</h4>
+                  <div id="instagram-grid"></div>
+               </div><!-- .single-widget -->
+
+               <div class="col-2 single-widget">
+                  <h4 class="widget-title">Useful Links</h4>
+                  <ul class="useful-links">
+                     <li><a href="">Listen Music Online</a></li>
+                     <li><a href="">Simple link 2</a></li>
+                     <li><a href="">Listen Music Online</a></li>
+                     <li><a href="">Simple link 4</a></li>
+                     <li><a href="">Simple link 5</a></li>
+                     <li><a href="">Simple link 6</a></li>
+                  </ul>
+               </div><!-- .single-widget -->
+
+               <div class="col-3 single-widget">
+                  <h4 class="widget-title">Recent Post</h4>
+                  <div class="widget-posts">
+                     <div class="single-post">
+                        <img src="imgs/widget-post-img.png" alt="">
+                        <div class="post-info">
+                           <a href=""><h3>Best Website</h3></a>
+                           <p>Lorem Ipsum dolor dio sit amolet</p>
+                        </div>
+                     </div>
+                     <div class="single-post">
+                        <img src="imgs/widget-post-img2.png" alt="">
+                        <div class="post-info">
+                           <a href=""><h3>Music Stdio</h3></a>
+                           <p>Lorem Ipsum dolor dio sit amolet</p>
+                        </div>
+                     </div>
+                  </div>
+               </div><!-- .single-widget -->
+
+            </div>
+         </div>
+      </div><!-- .footer-top -->
+
+      <div class="footer-bottom">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 pt-3 pb-3">
+                  <p>Copyright mBoom © 2019. All Rights Reserved</p>
+               </div>
+            </div>
+         </div>
+      </div><!-- .footer-bottom -->
+
+   </footer><!-- #footer-area -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS, than Main JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.instagramFeed.min.js"></script>
+    <script src="js/audioplayer.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
