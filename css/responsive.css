@@ -1,0 +1,244 @@
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .margin-t {
+       margin-top: 60px;
+    }
+    .margin-b {
+       margin-bottom: 60px;
+    }
+    section {
+    	padding: 60px 0;
+    }
+
+    /*****************
+    * Nav Style
+    *****************/
+    .nav-menu li a {
+    	font-size: 14px;
+    	padding: 0px 10px;
+    }
+
+    /*****************
+    * Player Style
+    *****************/
+
+    .player .controls .play, .player .controls .pause, .player .controls .rew, .player .controls .fwd, .player .controls .stop {
+    	width: 25px;
+    	height: 25px;
+    	line-height: 25px;
+    }
+    .player .controls .play, .player .controls .pause {
+    	line-height: 22px;
+    }
+    .player .timeHolder {
+    	width: 25%;
+    	line-height: 24px;
+    }
+    .player .progressbar {
+    	width: 51%;
+    	height: 17px;
+    }
+
+    /*****************
+    * Pobular album Style
+    *****************/
+    .popular-album .single-album {
+
+    	background-repeat: no-repeat;
+    	background-position: center;
+    	overflow: hidden;
+    }
+
+    /*****************
+    * .subscribe-box Style
+    *****************/
+    .subscribe-box input, .subscribe-box button {
+    	padding: 20px 25px;
+    }
+
+}
+
+
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    /*
+    * Defining css variables
+    */
+    html, body {
+       height: auto;
+    }
+
+    .margin-t {
+       margin-top: 50px;
+    }
+    .margin-b {
+       margin-bottom: 50px;
+    }
+    section {
+    	padding: 50px 0;
+    }
+
+    .section-title h1 {
+    	font-size: 30px;
+    	line-height: 40px;
+    	margin: 15px 0px;
+    }
+
+
+    /*****************
+    * Nav Style
+    *****************/
+    .navbar-toggler-icon > span {
+      background: var(--gray-color);
+      width: 100%;
+      height: 2px;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .navbar-collapse.show ul.nav-menu > li {
+      display: block;
+      text-align: center;
+      margin: 5px 0px;
+    }
+    .navbar-collapse.show {
+      background: #000000de;
+      margin: 0 !important;
+    }
+    .fixed .navbar-collapse.show {
+      background: transparent;
+      margin: 0 !important;
+    }
+    .navbar-collapse.show .social-icons {
+      border-top: 1px solid var(--gray-dark);
+      text-align: center;
+      padding: 5px 0px;
+    }
+
+    .social-icons li a {
+    	padding: 5px;
+    	font-size: 12px;
+    }
+
+    /*****************
+    * .recommended-music
+    *****************/
+
+    .single-music .card-body h5 {
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 5px;
+    }
+    .single-music .card-body p {
+      font-size: 12px;
+    }
+
+
+    /*****************
+    * .newsletter
+    *****************/
+    .newsletter h3 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    .subscribe-box input, .subscribe-box button {
+    	padding: 14px 15px;
+    }
+    .subscribe-box input {
+    	width: 45%;
+    }
+    .subscribe-box button {
+    	width: 30%;
+    }
+
+    /*****************
+    * .single-widget
+    *****************/
+    ul.useful-links li {
+      font-size: 12px;
+      line-height: 16px;
+    }
+    .widget-posts .single-post .post-info h3 {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    .widget-posts .single-post .post-info p {
+      font-size: 12px;
+      line-height: 14px;
+    }
+    .widget-posts .single-post img, .widget-posts .single-post .post-info {
+      display: block;
+      width: 100%;
+    }
+    .widget-posts .single-post img {
+      max-width: 130px;
+      max-height: 65px;
+    }
+
+    .video-inner {
+    	width: 60%;
+    }
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .margin-t {
+       margin-top: 40px;
+    }
+    .margin-b {
+       margin-bottom: 40px;
+    }
+    section {
+    	padding: 40px 0;
+    }
+
+    .btn-regular {
+    	padding: 10px 15px;
+    	font-size: 12px;
+    	font-weight: 600;
+    }
+
+    .player .controls {
+      width: 30%;
+    }
+    .player .progressbar {
+      width: 43%;
+    }
+
+    .popular-album .single-album {
+    	height: 300px;
+    }
+    .popular-album .single-album .play-btn i {
+      margin-top: 150px;
+      font-size: 45px;
+    }
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /*
+    * .hero-content
+    */
+    .hero-content h1 {
+      font-size: 35px;
+      line-height: 40px;
+      margin: 15px 0px;
+    }
+    .btn-regular {
+      padding: 10px 15px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .btn-regular:hover {
+      padding: 12px 17px;
+    }
+
+    .single-event {
+    	padding: 15px;
+    	background-repeat: no-repeat;
+    	background-size: 100%;
+    }
+}

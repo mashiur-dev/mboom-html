@@ -15,8 +15,10 @@
       <!-- owl.carousel CSS -->
       <link rel="stylesheet" href="js/assets/owl.carousel.min.css">
       <link rel="stylesheet" href="js/assets/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
       <!-- Style CSS -->
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body>
    <header id="header-area">
@@ -31,10 +33,14 @@
                   </a><!-- header logo -->
 
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-header-menu" aria-controls="main-header-menu" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
+                     <span class="navbar-toggler-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                     </span>
                   </button><!-- mobile menu toggle -->
 
-                  <div class="collapse navbar-collapse ml-lg-5" id="main-header-menu">
+                  <div class="collapse navbar-collapse ml-lg-5 ml-md-3" id="main-header-menu">
 
                      <ul class="nav-menu mr-auto mt-2 mt-lg-0">
                         <li class="active">
@@ -127,7 +133,7 @@
             <div class="col-12">
                <div class="card-columns">
 
-                  <div class="card single-album">
+                  <div class="card single-album wow fadeIn" data-wow-delay="0.1s">
                      <a href="#" class="album-cover">
                         <img src="imgs/album-cover.png" class="card-img-top" alt="...">
                         <span><i class="fas fa-play align-items-center"></i></span>
@@ -157,7 +163,7 @@
                      </div>
                   </div><!-- .single-album -->
 
-                  <div class="card single-album">
+                  <div class="card single-album wow fadeIn" data-wow-delay="0.2s">
                      <a href="#" class="album-cover">
                         <img src="imgs/album-cover2.png" class="card-img-top" alt="...">
                         <span><i class="fas fa-play align-items-center"></i></span>
@@ -187,7 +193,7 @@
                      </div>
                   </div><!-- .single-album -->
 
-                  <div class="card single-album">
+                  <div class="card single-album wow fadeIn" data-wow-delay="0.4s">
                      <a href="#" class="album-cover">
                         <img src="imgs/album-cover3.png" class="card-img-top" alt="...">
                         <span><i class="fas fa-play align-items-center"></i></span>
@@ -217,7 +223,7 @@
                      </div>
                   </div><!-- .single-album -->
 
-                  <div class="card single-album">
+                  <div class="card single-album wow fadeIn" data-wow-delay="0.6s">
                      <a href="#" class="album-cover">
                         <img src="imgs/album-cover4.png" class="card-img-top" alt="...">
                         <span><i class="fas fa-play align-items-center"></i></span>
@@ -247,7 +253,7 @@
                      </div>
                   </div><!-- .single-album -->
 
-                  <div class="card single-album">
+                  <div class="card single-album wow fadeIn" data-wow-delay="0.8s">
                      <a href="#" class="album-cover">
                         <img src="imgs/album-cover5.png" class="card-img-top" alt="...">
                         <span><i class="fas fa-play align-items-center"></i></span>
@@ -277,7 +283,7 @@
                      </div>
                   </div><!-- .single-album -->
 
-                  <div class="card single-album">
+                  <div class="card single-album wow fadeIn" data-wow-delay="1s">
                      <a href="#" class="album-cover">
                         <img src="imgs/album-cover3.png" class="card-img-top" alt="...">
                         <span><i class="fas fa-play align-items-center"></i></span>
@@ -326,7 +332,7 @@
             <div class="col-12">
 
                <div class="shows owl-carousel">
-                  <div class="single-event item" style="background-image:url(imgs/event-cover.png);">
+                  <div class="single-event item wow lightSpeedIn" data-wow-delay="0.6s" style="background-image:url(imgs/event-cover.png);">
                      <sapn class="date">20 Feb, 2019</sapn>
                      <div class="eventinfo text-center mb-5">
                         <h2 class="title"><a href="">Rural Festive Event</a></h2>
@@ -334,7 +340,7 @@
                         <a class="btn btn-regular mr-4" href="#">buy ticket</a>
                      </div>
                   </div>
-                  <div class="single-event item" style="background-image:url(imgs/event-cover2.png);">
+                  <div class="single-event item wow lightSpeedIn" data-wow-delay="0.4s" style="background-image:url(imgs/event-cover2.png);">
                      <sapn class="date">20 Feb, 2019</sapn>
                      <div class="eventinfo text-center mb-5">
                         <h2 class="title"><a href="">Rural Festive Event</a></h2>
@@ -342,7 +348,7 @@
                         <a class="btn btn-regular mr-4" href="#">buy ticket</a>
                      </div>
                   </div>
-                  <div class="single-event item" style="background-image:url(imgs/event-cover3.png);">
+                  <div class="single-event item wow lightSpeedIn" data-wow-delay="0.2s" style="background-image:url(imgs/event-cover3.png);">
                      <sapn class="date">20 Feb, 2019</sapn>
                      <div class="eventinfo text-center mb-5">
                         <h2 class="title"><a href="">Rural Festive Event</a></h2>
@@ -367,7 +373,7 @@
             </div>
             <div class="col-12">
 
-               <div class="team-profile owl-carousel">
+               <div class="team-profile owl-carousel wow fadeIn" data-wow-delay="0.5s">
 
                   <div class="single-profile item" style="background-image:url(imgs/team-profile.png);">
 
@@ -499,13 +505,19 @@
 
             <div class="col-12 margin-b">
 
-                  <div class="music-videos owl-carousel">
+                  <div class="music-videos owl-carousel wow shake" data-wow-delay="0.5s">
 
                      <div class="single-video item" style="background-image:url(imgs/music-video-cover1.png);">
                         <div class="video-inner">
-                           <h2>Selena Gomez - Look At Her Now</h2>
-                           <p>Selena Gomez Songs . Relesed - Oct 24, 2019</p>
+                            <h2>Selena Gomez - Look At Her Now</h2>
+                            <p>Selena Gomez Songs . Relesed - Oct 24, 2019</p>
                         </div>
+
+                        <a href="#">
+                        <div class="vplay-btn">
+                           <i class="fas fa-play"></i>
+                        </div>
+                        </a>
                      </div>
 
                      <div class="single-video item" style="background-image:url(imgs/music-video-cover1.png);">
@@ -523,7 +535,6 @@
                      </div>
 
                   </div><!-- .music-videos -->
-
             </div>
 
             <div class="col-12">
@@ -577,13 +588,13 @@
                </div><!-- .recommended-music -->
 
                <div class="row">
-                  <div class="col-8">
+                  <div class="col-md-8 col-sm-12">
                      <div class="inner-title">
                         <h4>Songs</h4>
                         <h2>Hot Songs</h2>
                      </div>
 
-                     <div class="tx-hotsong-player"></div>
+                     <div class="tx-hotsong-player mb-3"></div>
 
                      <div id="tx-hotsong-playlist" class="hidden">
                          <span class="single-music" data-cover="imgs/album-cover4.png" data-artist="Wali U." data-src="audio1.mp3">Haven Drop</span>
@@ -646,35 +657,35 @@
 
                   </div>
 
-                  <div class="col-4">
+                  <div class="col-md-4 col-sm-12">
                      <div class="inner-title">
                         <h4>Albums</h4>
                         <h2>Popular Albums</h2>
                      </div>
 
                      <div class="row popular-album">
-                        <div class="col-6">
+                        <div class="col-md-6 col-sm-12">
                            <div class="single-album" style="background-image:url(imgs/album-cover3.png);">
                               <span class="play-btn">
                                  <i class="fas fa-play align-items-center"></i>
                               </span>
                            </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-6 col-sm-12">
                            <div class="single-album" style="background-image:url(imgs/album-cover5.png);">
                               <span class="play-btn">
                                  <i class="fas fa-play align-items-center"></i>
                               </span>
                            </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-6 col-sm-12">
                            <div class="single-album" style="background-image:url(imgs/album-cover4.png);">
                               <span class="play-btn">
                                  <i class="fas fa-play align-items-center"></i>
                               </span>
                            </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-6 col-sm-12">
                            <div class="single-album" style="background-image:url(imgs/album-cover2.png);">
                               <span class="play-btn">
                                  <i class="fas fa-play align-items-center"></i>
@@ -775,7 +786,7 @@
             </div>
             <div class="row footer-widgets">
 
-               <div class="col-4 single-widget">
+               <div class="col-md-4 col-sm-6 col-6 single-widget">
                   <img class="widget-title" src="imgs/logo.png" alt="">
                   <p class="mb-5">Lorem ipsam dolor sit amolet crospa drgym is percet sila most fdasit.</p>
                   <ul class="useful-links email-phone">
@@ -802,12 +813,12 @@
                   </ul><!-- social icons-->
                </div><!-- .single-widget -->
 
-               <div class="col-3 single-widget">
+               <div class="col-md-3 col-sm-6 col-6 single-widget">
                   <h4 class="widget-title">Instagram</h4>
                   <div id="instagram-grid"></div>
                </div><!-- .single-widget -->
 
-               <div class="col-2 single-widget">
+               <div class="col-md-2 col-sm-6 col-6 single-widget">
                   <h4 class="widget-title">Useful Links</h4>
                   <ul class="useful-links">
                      <li><a href="">Listen Music Online</a></li>
@@ -819,7 +830,7 @@
                   </ul>
                </div><!-- .single-widget -->
 
-               <div class="col-3 single-widget">
+               <div class="col-md-3 col-sm-6 col-6 single-widget">
                   <h4 class="widget-title">Recent Post</h4>
                   <div class="widget-posts">
                      <div class="single-post">
@@ -855,13 +866,13 @@
 
    </footer><!-- #footer-area -->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS, than Main JS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, than Owl.carousel JS, than instagramFeed JS, than audioplayer JS, than Main JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.instagramFeed.min.js"></script>
+    <script src="js/wow.js"></script>
     <script src="js/audioplayer.js"></script>
     <script src="js/main.js"></script>
   </body>

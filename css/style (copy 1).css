@@ -51,9 +51,6 @@ h1 {
 .margin-b {
    margin-bottom: 80px;
 }
-.hidden {
-    display: none;
-}
 section {
 	padding: 80px 0;
 }
@@ -165,13 +162,6 @@ section {
 }
 .social-icons li a {
 	padding: 10px;
-}
-.navbar-toggler-icon > span {
-	background: var(--gray-color);
-	width: 100%;
-	height: 2px;
-	display: block;
-	margin-bottom: 8px;
 }
 
 /*==================
@@ -354,23 +344,6 @@ section {
 	position: absolute;
 	top: 50%;
 	transform: translate(0, -50%);
-}
-.vplay-btn {
-	position: absolute;
-	top: 50%;
-	transform: translate(-0, -50%);
-	right: 15%;
-	font-size: 25px;
-	border: 1px solid var(--white-color);
-	padding: 18px 22px;
-	border-radius: 51px;
-	width: 65px;
-	height: 65px;
-	line-height: 8px;
-	color: var(--pink-color);
-}
-.vplay-btn:hover {
-	border-color: var(--gray-color);
 }
 .music-videos .owl-dots {
 	position: absolute;
@@ -606,27 +579,18 @@ ul.useful-links li {
 =======================================================*/
 
 .player {
-	height: 110px;
+	height: 150px;
+	position: relative;
 	width: 100%;
 	z-index: 2;
 	display: block;
 }
-
-.player-right {
-	width: 80%;
-	display: inline-block;
-	margin-left: 5%;
-	overflow: hidden;
-	position: relative;
-}
 .player .info {
+	margin-left: 140px;
+	top: 30px;
+	position: absolute;
 	font-family: 'Montserrat', sans-serif;
 }
-.player .volume {
-	display: block;
-	text-align: right;
-}
-
 .player .info .nowplay {
 	font-size: 12px;
 }
@@ -652,30 +616,36 @@ ul.useful-links li {
 	font-size: 20px;
 	line-height: 10px;
 }
-
+.pl {
+    background: url(../images/playlist.png) no-repeat;
+    cursor: pointer;
+    height: 40px;
+    left: 330px;
+    position: absolute;
+    top: 20px;
+    width: 39px;
+}
+.pl:hover {
+    top: 21px;
+}
 .player .cover {
 	border-radius: 1px;
 	height: 100px;
-	width: 15%;
-	background-size: contain;
-	display: inline-block;
-	background-repeat: no-repeat;
-}
-.player-right {
-	width: 80%;
-	display: inline-block;
-	margin-left: 5%;
-	overflow: hidden;
+	position: absolute;
+	top: 30px;
+	width: 100px;
+	background-size: 100%;
 }
 .player .controls {
 	cursor: pointer;
-	display: inline-block;
-	width: 22%;
-	line-height: 30px;
+	position: absolute;
+	top: 95px;
+	left: 130px;
+	width: 20%;
 }
 .player .controls .play, .player .controls .pause {
 	background: var(--pink-color);
-	line-height: 30px;
+	line-height: 27px;
 	border-radius: 50px;
 }
 .player .controls .play, .player .controls .pause, .player .controls .rew, .player .controls .fwd, .player .controls .stop {
@@ -718,11 +688,19 @@ ul.useful-links li {
 .player .controls .stop::before {
     content: "\f04d";
 }
-
+.player .hidden {
+    display: none;
+}
 .player .controls .visible {
     display: block;
 }
-
+.player .volume {
+	height: 11px;
+	right: 20px;
+	position: absolute;
+	top: 70px;
+	width: 70px;
+}
 .player.mute .volume-btn::before {
     content: "\f026"
 }
@@ -734,7 +712,6 @@ ul.useful-links li {
 	width: 20px;
 	display: inline-block;
 	position: relative;
-	margin-right: 10px;
 }
 .player .volume-adjust {
 	height: 8px;
@@ -748,13 +725,15 @@ ul.useful-links li {
 	background: var(--pink-gradient);
 }
 .player .progressbar {
-	background-color: transparent;
+	background-color: #fff;
 	cursor: pointer;
-	height: 18px;
-	width: 58%;
-	display: inline-block;
-	position: relative;
-	margin-left: 2%;
+	z-index: 1;
+	right: -1em;
+	height: 8px;
+	position: absolute;
+	width: 55%;
+	top: 107px;
+	margin-right: 38px;
 }
 .player .novolume .progressbar
 {
@@ -780,10 +759,11 @@ ul.useful-links li {
 	color: #FFFFFF;
 	font-size: 14px;
 	font-weight: bold;
-	width: 18%;
+	top: 99px;
+	position: absolute;
+	left: 28%;
+	width: 15%;
 	text-align: center;
-	display: inline-block;
-	line-height: 30px;
 }
 .player .time-current, .time-duration, .time-separator {
     color: #FFFFFF;

@@ -30,7 +30,9 @@ $(document).ready(function() {
       items:1,
       nav:true,
       margin:20,
+      //dotsContainer: ".owl-stage-outer"
    });
+
 
    /*======================
    * Instagram feed
@@ -76,8 +78,7 @@ $(".tx-audioplayer").musicPlayer({
   loop: false,
   timeSeparator: ' / ',
   playerAbovePlaylist: true,
-  infoElements: ['title' , 'artist'] ,
-  elements: ['artwork', 'information', 'controls', 'progress', 'time', 'volume'],
+  infoElements: ['title' , 'artist'],
   timeElements: ['current', 'duration'],
   controlElements: ['backward', 'play', 'forward', 'stop'],
 });
@@ -90,7 +91,10 @@ $(".tx-hotsong-player").musicPlayer({
   timeSeparator: ' / ',
   playerAbovePlaylist: true,
   infoElements: ['title' , 'artist'] ,
-  elements: ['artwork', 'information', 'controls', 'progress', 'time', 'volume'],
+  elements: ['artwork', 'information', 'volume', 'controls', 'time', 'progress', ],
   timeElements: ['current', 'duration'],
   controlElements: ['backward', 'play', 'forward', 'stop'],
 });
+
+//init wow
+new WOW().init();
