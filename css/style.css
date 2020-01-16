@@ -28,6 +28,7 @@ p {
 a{
    text-decoration: none;
    color:var(--white-color);
+   transition: all ease-in-out 0.5s;
 }
 
 a:hover {
@@ -114,17 +115,18 @@ section {
 	color: var(--white-color);
 	text-transform: uppercase;
 	border-radius: 50px;
-	font-weight: 500;
-	padding: 10px 30px;
+	font-weight: 700;
+	padding: 15px 30px;
 	font-size: 14px;
-	letter-spacing: 1px;
+	letter-spacing: 4px;
 }
 
 .btn-regular:hover {
 	background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #ff0066b5, #fe23d7cc);
 	color: var(--white-color);
 	border: 0;
-	padding: 12px 32px;
+	padding: 16px 31px;
+
 }
 /*==================
 * Header style
@@ -149,10 +151,39 @@ section {
 }
 .nav-menu li {
 	display: inline-block;
+	position: relative;
 }
 .nav-menu li a {
-	padding: 0 20px;
+	padding: 20px 20px;
 	font-weight: 500;
+}
+/*
+dropdown menu
+*/
+
+.nav-menu li ul {
+	position: absolute;
+	min-width: 200px;
+	margin: 0;
+	padding: 0;
+	background: rgba(0, 0, 0, 0.3);
+	top: 35px;
+	left: -99990px;
+	display: none;
+	z-index: 99;
+}
+
+.nav-menu li a:hover + ul {
+	display: block;
+	left: 16px;
+}
+.nav-menu li ul li {
+  padding: 10px 10px;
+  border-bottom: 1px solid rgba(255,255, 255, 0.15);
+  display: block;
+}
+.nav-menu li ul li:last-child {
+  border: 0px;
 }
 
 .social-icons {
@@ -191,6 +222,12 @@ section {
 	font-weight: 800;
 	line-height: 69px;
 	margin: 15px 0 15px;
+}
+#full-hero-area .music-player {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 10%;
 }
 
 /*==================
