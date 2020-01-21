@@ -30,6 +30,12 @@ $(document).ready(function() {
       items:1,
       nav:true,
       margin:20,
+      autoplayHoverPause: true,
+      animateOut: 'slideOutUp',
+      animateIn: 'slideInUp',
+      mouseDrag: false,
+      touchDrag: false,
+      pullDrag: false,
       //dotsContainer: ".owl-stage-outer"
    });
 

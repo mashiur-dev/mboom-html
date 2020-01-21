@@ -1,8 +1,8 @@
 @media (min-height:1080px){
     .tx-audioplayer {
-	position: absolute;
-	bottom: 8%;
-}
+   	position: absolute;
+   	bottom: 8%;
+   }
 }
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
@@ -16,6 +16,9 @@
     	padding: 60px 0;
     }
 
+    .btn-regular {
+   	padding: 15px 25px;
+   }
     /*****************
     * Nav Style
     *****************/
@@ -186,6 +189,24 @@
     	width: 60%;
     }
 
+    /*****************
+   * .player
+   *****************/
+   .player .player-right {
+   	width: 100%;
+   	margin: 0;
+   }
+   .player .cover {
+   	height: 40px;
+   	width: 50px;
+   	display: block;
+   	position: absolute;
+   	margin-left: 10px;
+   }
+   .player .info {
+   	margin-left: 70px;
+   }
+
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -206,6 +227,29 @@
     	font-weight: 600;
     }
 
+   .hero-content {
+   	margin-top: 35%;
+   }
+   .hero-content h1 {
+   	font-size: 35px;
+   	line-height: 40px;
+   }
+   #full-hero-area .music-player {
+   	bottom: 15px;
+   }
+   .tx-audioplayer .player .progressbar {
+	width: 48%;
+   }
+   .tx-audioplayer .player .timeHolder {
+   	width: 25%;
+   }
+   .tx-audioplayer .player .controls {
+   	width: 25%;
+   }
+
+    .inner-page .hero-content {
+      margin-top: 30%;
+      }
     .player .controls {
       width: 30%;
     }
@@ -220,6 +264,11 @@
       margin-top: 150px;
       font-size: 45px;
     }
+
+    .tx-breadcrumb ul li {
+   	font-size: 12px;
+   	padding: 0px 5px 0;
+   }
 
 }
 
@@ -247,4 +296,12 @@
     	background-repeat: no-repeat;
     	background-size: 100%;
     }
+
+    .blog-cover img {
+   	width: 100%;
+   }
+
+   .related-posts .single {
+   	text-align: center;
+   }
 }

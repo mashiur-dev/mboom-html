@@ -51,7 +51,7 @@
                         </li>
                         <li>
                            <a href="#">Gallary</a>
-                           <ul>
+                           <ul class="sub-menu">
                                <li><a href="#">Song Gallary</a></li>
                                <li><a href="">Video Gallary</a></li>
                                <li><a href="">Single Gallary</a></li>
@@ -98,16 +98,16 @@
       </div>
    </header> <!-- #header-area -->
 
-   <section id="full-hero-area">
+   <section id="full-hero-area" class="shadow-bottom">
       <div class="container">
          <div class="row align-items-start">
 
-            <div class="col-7 offert-lg-5 hero-content">
+            <div class="col-lg-6 offert-lg-7 col-md-10 mb-sm-5 hero-content">
 
-               <h1>Exclusive event is here</h1>
-               <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
+               <h1>Exclusive Event Is Here.</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipiscing sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-               <div class="hero-buttons mt-4">
+               <div class="hero-buttons mt-5">
                   <a class="btn btn-regular mr-4" href="#">event ticket</a>
                   <a class="btn btn-regular" href="#">listen music</a>
                </div>
@@ -130,7 +130,7 @@
       </div>
    </section><!-- #full-hero-area -->
 
-   <section id="album-showcase-area">
+   <section id="album-showcase-area" class="shadow-top shadow-bottom">
       <div class="container">
          <div class="row">
             <div class="section-title col-12">
@@ -143,7 +143,7 @@
                   <div class="card single-album wow fadeIn" data-wow-delay="0.1s">
                      <a href="#" class="album-cover">
                         <img src="imgs/album-cover.png" class="card-img-top" alt="...">
-                        <span><i class="fas fa-play align-items-center"></i></span>
+                        <div class="hover-overlay"><span><i class="fas fa-play align-items-center"></i> <span>Play</span></span></div>
                      </a>
                      <div class="card-body">
                         <a href="">
@@ -173,13 +173,13 @@
                   <div class="card single-album wow fadeIn" data-wow-delay="0.2s">
                      <a href="#" class="album-cover">
                         <img src="imgs/album-cover2.png" class="card-img-top" alt="...">
-                        <span><i class="fas fa-play align-items-center"></i></span>
+                        <div class="hover-overlay"><span><i class="fas fa-play align-items-center"></i> <span>Play</span></span></div>
                      </a>
                      <div class="card-body">
                         <a href="">
-                           <h5 class="card-title">Life is perfect</h5>
+                           <h5 class="card-title">Aractic Monkey</h5>
                         </a>
-                        <p class="card-text">Shoyebz</p>
+                        <p class="card-text">Goulding ft jra</p>
                         <ul class="social-icons my-2 my-lg-0">
                            <li>
                               <a href=""><i class="fab fa-facebook-f"></i></i></a>
@@ -203,7 +203,7 @@
                   <div class="card single-album wow fadeIn" data-wow-delay="0.4s">
                      <a href="#" class="album-cover">
                         <img src="imgs/album-cover3.png" class="card-img-top" alt="...">
-                        <span><i class="fas fa-play align-items-center"></i></span>
+                        <div class="hover-overlay"><span><i class="fas fa-play align-items-center"></i> <span>Play</span></span></div>
                      </a>
                      <div class="card-body">
                         <a href="">
@@ -233,7 +233,7 @@
                   <div class="card single-album wow fadeIn" data-wow-delay="0.6s">
                      <a href="#" class="album-cover">
                         <img src="imgs/album-cover4.png" class="card-img-top" alt="...">
-                        <span><i class="fas fa-play align-items-center"></i></span>
+                        <div class="hover-overlay"><span><i class="fas fa-play align-items-center"></i> <span>Play</span></span></div>
                      </a>
                      <div class="card-body">
                         <a href="">
@@ -263,7 +263,7 @@
                   <div class="card single-album wow fadeIn" data-wow-delay="0.8s">
                      <a href="#" class="album-cover">
                         <img src="imgs/album-cover5.png" class="card-img-top" alt="...">
-                        <span><i class="fas fa-play align-items-center"></i></span>
+                        <div class="hover-overlay"><span><i class="fas fa-play align-items-center"></i> <span>Play</span></span></div>
                      </a>
                      <div class="card-body">
                         <a href="">
@@ -293,7 +293,7 @@
                   <div class="card single-album wow fadeIn" data-wow-delay="1s">
                      <a href="#" class="album-cover">
                         <img src="imgs/album-cover3.png" class="card-img-top" alt="...">
-                        <span><i class="fas fa-play align-items-center"></i></span>
+                        <div class="hover-overlay"><span><i class="fas fa-play align-items-center"></i> <span>Play</span></span></div>
                      </a>
                      <div class="card-body">
                         <a href="">
@@ -327,7 +327,7 @@
       </div>
    </section><!-- #album-showcase-area -->
 
-   <section id="upcomming-shows-area">
+   <section id="upcomming-shows-area" class="shadow-bottom">
       <div class="container">
          <div class="row">
 
@@ -336,31 +336,39 @@
                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspend.</p>
             </div>
 
-            <div class="col-12">
+            <div class="col-12 mb-5">
 
                <div class="shows owl-carousel">
                   <div class="single-event item wow lightSpeedIn" data-wow-delay="0.6s" style="background-image:url(imgs/event-cover.png);">
                      <sapn class="date">20 Feb, 2019</sapn>
-                     <div class="eventinfo text-center mb-5">
+                     <div class="eventinfo text-center mb-3">
                         <h2 class="title"><a href="">Rural Festive Event</a></h2>
                         <h4 class="location">London Park, London</h4>
-                        <a class="btn btn-regular mr-4" href="#">buy ticket</a>
+                        <a class="btn btn-regular mt-4" href="#">buy ticket</a>
                      </div>
                   </div>
                   <div class="single-event item wow lightSpeedIn" data-wow-delay="0.4s" style="background-image:url(imgs/event-cover2.png);">
                      <sapn class="date">20 Feb, 2019</sapn>
-                     <div class="eventinfo text-center mb-5">
+                     <div class="eventinfo text-center mb-3">
                         <h2 class="title"><a href="">Rural Festive Event</a></h2>
                         <h4 class="location">London Park, London</h4>
-                        <a class="btn btn-regular mr-4" href="#">buy ticket</a>
+                        <a class="btn btn-regular mt-4" href="#">buy ticket</a>
                      </div>
                   </div>
                   <div class="single-event item wow lightSpeedIn" data-wow-delay="0.2s" style="background-image:url(imgs/event-cover3.png);">
                      <sapn class="date">20 Feb, 2019</sapn>
-                     <div class="eventinfo text-center mb-5">
+                     <div class="eventinfo text-center mb-3">
                         <h2 class="title"><a href="">Rural Festive Event</a></h2>
                         <h4 class="location">London Park, London</h4>
-                        <a class="btn btn-regular mr-4" href="#">buy ticket</a>
+                        <a class="btn btn-regular mt-4" href="#">buy ticket</a>
+                     </div>
+                  </div>
+                  <div class="single-event item wow lightSpeedIn" data-wow-delay="0.6s" style="background-image:url(imgs/event-cover.png);">
+                     <sapn class="date">20 Feb, 2019</sapn>
+                     <div class="eventinfo text-center mb-3">
+                        <h2 class="title"><a href="">Rural Festive Event</a></h2>
+                        <h4 class="location">London Park, London</h4>
+                        <a class="btn btn-regular mt-4" href="#">buy ticket</a>
                      </div>
                   </div>
                </div><!-- .owl-carousel -->
@@ -370,7 +378,7 @@
       </div>
    </section><!-- #upcomming-shows-area -->
 
-   <section id="expert-team-area">
+   <section id="expert-team-area" class="shadow-bottom">
       <div class="container">
          <div class="row">
 
@@ -552,44 +560,74 @@
 
                <div class="recommended-music inner-section card-deck">
 
-                 <div class="single-music card">
-                   <img src="imgs/recommdend-music1.png" class="card-img-top" alt="...">
-                   <div class="card-body">
-                      <h5 class="card-title">Life is perfect</h5>
-                      <p class="card-text">Shoyebz</p>
-                   </div>
+                  <div class="single-music card">
+                     <a href="#">
+                        <img src="imgs/recommdend-music1.png" class="card-img-top" alt="...">
+                        <div class="vplay-btn">
+                         <i class="fas fa-play"></i>
+                        </div>
+
+                        <div class="card-body">
+                         <h5 class="card-title">Life is perfect</h5>
+                         <p class="card-text">Shoyebz</p>
+                        </div>
+                    </a>
+                  </div><!-- .card -->
+
+                  <div class="single-music card">
+                    <a href="#">
+                       <img src="imgs/recommdend-music1.png" class="card-img-top" alt="...">
+                       <div class="vplay-btn">
+                        <i class="fas fa-play"></i>
+                       </div>
+
+                       <div class="card-body">
+                        <h5 class="card-title">Life is perfect</h5>
+                        <p class="card-text">Shoyebz</p>
+                       </div>
+                   </a>
                  </div><!-- .card -->
 
                  <div class="single-music card">
-                   <img src="imgs/recommdend-music2.png" class="card-img-top" alt="...">
-                   <div class="card-body">
-                      <h5 class="card-title">Life is perfect</h5>
-                      <p class="card-text">Shoyebz</p>
-                   </div>
+                    <a href="#">
+                       <img src="imgs/recommdend-music1.png" class="card-img-top" alt="...">
+                       <div class="vplay-btn">
+                        <i class="fas fa-play"></i>
+                       </div>
+
+                       <div class="card-body">
+                        <h5 class="card-title">Life is perfect</h5>
+                        <p class="card-text">Shoyebz</p>
+                       </div>
+                   </a>
                  </div><!-- .card -->
 
                  <div class="single-music card">
-                   <img src="imgs/recommdend-music3.png" class="card-img-top" alt="...">
-                   <div class="card-body">
-                      <h5 class="card-title">Life is perfect</h5>
-                      <p class="card-text">Shoyebz</p>
-                   </div>
+                    <a href="#">
+                       <img src="imgs/recommdend-music1.png" class="card-img-top" alt="...">
+                       <div class="vplay-btn">
+                        <i class="fas fa-play"></i>
+                       </div>
+
+                       <div class="card-body">
+                        <h5 class="card-title">Life is perfect</h5>
+                        <p class="card-text">Shoyebz</p>
+                       </div>
+                   </a>
                  </div><!-- .card -->
 
                  <div class="single-music card">
-                   <img src="imgs/recommdend-music1.png" class="card-img-top" alt="...">
-                   <div class="card-body">
-                      <h5 class="card-title">Life is perfect</h5>
-                      <p class="card-text">Shoyebz</p>
-                   </div>
-                 </div><!-- .card -->
+                    <a href="#">
+                       <img src="imgs/recommdend-music1.png" class="card-img-top" alt="...">
+                       <div class="vplay-btn">
+                        <i class="fas fa-play"></i>
+                       </div>
 
-                 <div class="single-music card">
-                   <img src="imgs/recommdend-music2.png" class="card-img-top" alt="...">
-                   <div class="card-body">
-                      <h5 class="card-title">Life is perfect</h5>
-                      <p class="card-text">Shoyebz</p>
-                   </div>
+                       <div class="card-body">
+                        <h5 class="card-title">Life is perfect</h5>
+                        <p class="card-text">Shoyebz</p>
+                       </div>
+                   </a>
                  </div><!-- .card -->
 
                </div><!-- .recommended-music -->
@@ -649,16 +687,7 @@
                               </td>
                               <td class="duration text-center">5.05</td>
                            </tr>
-                           <tr>
-                              <td class="song-mane">
-                                 <img src="imgs/album-cover5.png" alt="">
-                                 <span>Blue Moon Ft. Rexa</span>
-                              </td>
-                              <td>
-                                 <span>Death cure fo</span>
-                              </td>
-                              <td class="duration text-center">5.05</td>
-                           </tr>
+
                         </tbody>
                      </table><!-- .hot-songs-list -->
 
@@ -751,14 +780,14 @@
                         <div class="blog-date">OCT,12<span>2019</span></div>
                      </div>
                      <div class="blog-footer">
-                        <a class="title mb-2" href="#">Silver incididunt ut labore et dolore magna aliqua. Quis ipsum suspend.</a>
+                        <a class="title mb-2" href="#">Silver Party arrange by a big Program.</a>
                         <a class="post-author" href="#"><i class="fas fa-user mr-1"></i> By Admin</a>
                      </div>
                   </div>
 
                   <div class="single-blog item">
                      <div class="blog-cover">
-                        <img src="imgs/event-cover.png" alt="">
+                        <img src="imgs/blog-cover.png" alt="">
                         <div class="blog-date">OCT,12<span>2019</span></div>
                      </div>
                      <div class="blog-footer">
@@ -793,12 +822,12 @@
             </div>
             <div class="row footer-widgets">
 
-               <div class="col-md-4 col-sm-6 col-6 single-widget">
+               <div class="col-md-3 col-sm-6 col-6 single-widget">
                   <img class="widget-title" src="imgs/logo.png" alt="">
                   <p class="mb-5">Lorem ipsam dolor sit amolet crospa drgym is percet sila most fdasit.</p>
                   <ul class="useful-links email-phone">
-                      <li>Email: <a href="mailto:Support@mBoom.com">Support@mBoom.com</a></li>
-                      <li>Call: <a href="tel:555-555-1234">555-555-1234</a></li>
+                      <li><span style="color:var(--pink-color);">Email:</span> <a href="mailto:Support@mBoom.com">Support@mBoom.com</a></li>
+                      <li><span style="color:var(--pink-color);">Call:</span> <a href="tel:555-555-1234">555-555-1234</a></li>
                   </ul>
 
                   <ul class="social-icons my-2 my-lg-0">
@@ -820,24 +849,24 @@
                   </ul><!-- social icons-->
                </div><!-- .single-widget -->
 
-               <div class="col-md-3 col-sm-6 col-6 single-widget">
+               <div class="col-md-2 col-sm-6 col-6 single-widget">
                   <h4 class="widget-title">Instagram</h4>
                   <div id="instagram-grid"></div>
                </div><!-- .single-widget -->
 
-               <div class="col-md-2 col-sm-6 col-6 single-widget">
+               <div class="col-md-3 col-sm-6 col-6 single-widget">
                   <h4 class="widget-title">Useful Links</h4>
                   <ul class="useful-links">
-                     <li><a href="">Listen Music Online</a></li>
-                     <li><a href="">Simple link 2</a></li>
-                     <li><a href="">Listen Music Online</a></li>
-                     <li><a href="">Simple link 4</a></li>
-                     <li><a href="">Simple link 5</a></li>
-                     <li><a href="">Simple link 6</a></li>
+                     <li><a href="">Lorem ipsum dolor sit</a></li>
+                     <li><a href="">ametco nsectetur</a></li>
+                     <li><a href="">sed do eiusmod tempor</a></li>
+                     <li><a href="">magna aliqua Quis ipsu baha</a></li>
+                     <li><a href="">suspendisse ultrices</a></li>
+                     <li><a href="">Risus commodo vivea remo</a></li>
                   </ul>
                </div><!-- .single-widget -->
 
-               <div class="col-md-3 col-sm-6 col-6 single-widget">
+               <div class="col-md-4 col-sm-6 col-6 single-widget">
                   <h4 class="widget-title">Recent Post</h4>
                   <div class="widget-posts">
                      <div class="single-post">
