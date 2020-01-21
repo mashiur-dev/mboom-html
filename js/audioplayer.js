@@ -206,7 +206,7 @@
                 if (/iPad|iPhone|iPod/.test(navigator.userAgent)) $(volumeInfo).hide();
 
                 // initialization - first element in playlist
-                this.initAudio( $(this.playlistHolder.children(".single-music:first-child") ) );
+                this.initAudio( $(this.playlistHolder.children(".single-music:first-of-type") ) );
 
                 // set volume
                 this.song.volume = this.volumeValue;
@@ -244,7 +244,7 @@
 
                 //Looping Activated : play the first item on the playlist if there is no next item with(looping)
                 if ( next.length == 0 ) {
-                    next = $(playerThis.playlistHolder).find('.single-music:first-child');
+                    next = $(playerThis.playlistHolder).find('.single-music:first-of-type');
                 }
 
                 playerThis.loadNewSong(next);
@@ -264,7 +264,7 @@
                 var prev = $(playerThis.playlistHolder).find('.single-music.active').prev();
                 //play the last item on the playlist if there is no previous item (looping)
                 if (prev.length == 0 ) {
-                    prev = $(playerThis.playlistHolder).find('.single-music:last-child');
+                    prev = $(playerThis.playlistHolder).find('.single-music:last-of-type');
                 }
 
                 playerThis.loadNewSong(prev);
@@ -495,7 +495,7 @@
 
                 //Looping Activated : play the first item on the playlist if there is no next item with(looping)
                 if (  next.length == 0 && this.settings.loop  ) {
-                    next = $(this.playlistHolder).children('.single-music:first-child')
+                    next = $(this.playlistHolder).children('.single-music:first-of-type')
                     this.loadNewSong(next);
                     this.playAudio();
                 }

@@ -79,22 +79,29 @@
        height: auto;
     }
 
-    .margin-t {
+   .margin-t {
        margin-top: 50px;
     }
-    .margin-b {
+   .margin-b {
        margin-bottom: 50px;
     }
-    section {
+   section {
     	padding: 50px 0;
     }
 
-    .section-title h1 {
+   .section-title h1 {
     	font-size: 30px;
     	line-height: 40px;
     	margin: 15px 0px;
     }
 
+   #header-area {
+   	position: absolute;
+   }
+
+   .hero-content {
+	   margin-top: 210px;
+   }
 
     /*****************
     * Nav Style
@@ -221,15 +228,12 @@
     	padding: 40px 0;
     }
 
-    .btn-regular {
+   .btn-regular {
     	padding: 10px 15px;
     	font-size: 12px;
     	font-weight: 600;
-    }
-
-   .hero-content {
-   	margin-top: 35%;
    }
+
    .hero-content h1 {
    	font-size: 35px;
    	line-height: 40px;
