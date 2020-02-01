@@ -116,6 +116,7 @@ section {
 
 .owl-nav {
 	text-align: right;
+	margin-top: 10px;
 }
 .owl-nav > button.owl-prev {
 	margin-right: 15px;
@@ -124,6 +125,7 @@ section {
 	font-size: 30px;
 	line-height: 35px;
 	padding: 0 5px;
+	font-weight: 500;
 }
 .section-title {
 	margin-bottom: 80px;
@@ -135,6 +137,9 @@ section {
 	background: var(--pink-gradient);
 	height: 4px;
 	width: 80px;
+}
+.section-title.text-center::after {
+	margin: 0px auto;
 }
 /*==================
 * Buttons style
@@ -152,6 +157,7 @@ section {
 	padding: 15px 30px;
 	font-size: 14px;
 	letter-spacing: 4px;
+   transition: background 0.5s ease;
 }
 
 .btn-regular:hover {
@@ -299,27 +305,33 @@ dropdown menu
    transition: all .6s ease-in-out;
 }
 #album-showcase-area .single-album:hover {
-	width: 110%;
-	left: -18px;
+
 }
 
 .card-body {
 	border: 1px solid transparent;
-   border-top: 0px;
-	border-bottom: 4px solid transparent;
+	border-top: 0px;
+	border-bottom: 0px;
+   transition: all .6s ease-in-out;
 }
 .single-album:hover .card-body {
 	border: 1px solid rgba(145, 145, 145, 0.3);
 	border-radius: 0px 0px 5px 5px;
 	border-top: 0px;
+	border-bottom: 0px;
+}
+.single-album::after{
+   content: " ";
+   width: 1px;
+	height: 3px;
+   margin-top: -3px;
+   transition: all .6s ease-in-out;
 }
 .single-album:hover::after {
 	background: var(--pink-gradient);
-	content: " ";
 	width: 100%;
 	height: 3px;
 	display: block;
-	margin-top: -3px;
 	border-radius: 0px 0px 5px 5px;
 }
 
@@ -766,7 +778,7 @@ dropdown menu
 /*===============
 * .footer-widgets
 ================*/
-.widget-title {
+.widget-title, .title-inner {
 	font-size: 20px;
 	color: var(--pink-color);
 	margin-bottom: 45px;
@@ -1158,11 +1170,7 @@ blockquote::before {
 .post-tags > * {
 	display: inline-block;
 }
-/*.post-tags > span, .post-share > span {
-	border: solid var(--pink-color);
-	border-width: 1px 0px 1px 5px;
-	padding: 2px 10px;
-}*/
+
 .post-tags > span::after, .post-share > span::after {
     content: "";
     border: solid #f06;
@@ -1204,4 +1212,62 @@ blockquote::before {
 .related-posts .single span {
 	font-size: 14px;
 	color: var(--gray-color);
+}
+
+/*
+* contact page
+*/
+
+.contact-form input, .contact-form textarea {
+	background: transparent;
+	border: solid var(--gray-black);
+	border-width: 0px 0px 1px 0px;
+	border-radius: 0;
+	padding: 0px;
+	font-size: 14px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+   background: transparent;
+   box-shadow: none;
+   border-color: transparent;
+}
+
+.contact-form input, .contact-form textarea {
+   padding: 30px 0px;
+}
+
+.contact-form input + span, .contact-form textarea + span  {
+	content: "";
+	width: 0px;
+	height: 1px;
+	background: var(--pink-gradient);
+	display: block;
+	margin-top: -1px;
+   transition: width .5s ease-in-out;
+}
+.contact-form input:focus + span, .contact-form textarea:focus + span  {
+   width: 100%;
+}
+
+ul.contact-info {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+ul.contact-info li {
+   margin-bottom: 40px;
+}
+ul.contact-info span {
+   display: block;
+   color:var(--pink-color);
+   font-size: 14px;
+   margin-bottom:10px;
+}
+ul.contact-info span i {
+   margin-right: 5px;
+}
+
+.social-media-info p {
+   color: var(--gray-color);
 }
